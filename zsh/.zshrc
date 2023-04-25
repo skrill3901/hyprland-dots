@@ -28,6 +28,27 @@ alias lvimconfig='lvim ~/.config/lvim/config.lua'
 alias zshconfig="lvim ~/.zshrc"
 alias hyprconfig="lvim ~/.config/hypr/hyprland.conf"
 
+#file manipulation
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias rm="rm -iv"
+alias mkdir="mkdir -pv"
+alias snan="sudo nano"
+
+#update packages
+alias upd="sudo pacman -Syu"
+
+#show active ports
+alias ports="sudo lsof -i -P -n | grep LISTEN"
+
+#torrserve
+alias toron="systemctl start torrserver.service"
+alias toroff="systemctl stop torrserver.service"
+
+#wireguard
+alias wgon="wg-quick up wg0"
+alias wgof="wg-quick down wg0"
+
 # cat
 # alias cat='bat'
 
