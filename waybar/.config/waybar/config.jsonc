@@ -14,6 +14,8 @@
     "custom/separator",
     "disk",
     "custom/separator",
+    "battery",
+    "custom/separator",
     "wlr/workspaces"
   ],
   "modules-center": [
@@ -23,9 +25,6 @@
     "tray",
     "custom/separator",
     "network",
-    // uncomment if on laptop
-    // "custom/separator",
-    // "battery",
     "custom/separator",
     "pulseaudio",
     "custom/separator",
@@ -126,6 +125,8 @@
     "format-pt": "PT"
   },
   "clock": {
-    "format": "{:<span color='#ffffff'> </span>%A, %B %d - <span color='#ffffff'>󱑒</span> %I:%M %p}"
+     "format": "<span color='#bf616a'></span>{:%H:%M}",
+     "format-alt": "<span color='#bf616a'> </span>{:%a %b %d}",
+     "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
   }
 }

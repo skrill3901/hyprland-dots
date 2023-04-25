@@ -1,0 +1,3 @@
+#!/bin/sh
+killall dunst
+notify-send -i /usr/share/icons/Adwaita/24x24/status//usr/share/icons/Adwaita/24x24/status/audio-volume-overamplified-rtl-symbolic.symbolic.png " Volume " " $(pamixer --get-volume)% "
