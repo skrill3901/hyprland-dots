@@ -16,7 +16,7 @@
     "custom/separator",
     "battery",
     "custom/separator",
-    "wlr/workspaces"
+    "hyprland/workspaces"
   ],
   "modules-center": ["hyprland/window"],
   "modules-right": [
