@@ -75,16 +75,16 @@ cd .. && rm -rf yay
 
 This installation is going to take a while depending on your system.
 
-| Type               | Package(s)                      |
-| ------------------ | ------------------------------- |
-| Hyprland + Wayland | hyprland-git                    |
-| QT Wayland Support | qt5-wayland qt6-wayland         |
-| Status Bar         | waybar-hyprland-git             |
-| Wallpaper          | hyprpaper-git                   |
-| XDG Desktop Portal | xdg-desktop-portal-hyprland-git |
+| Type                       | Package(s)                 |
+| -------------------------- | -------------------------- |
+| Hyprland + Wayland         | hyprland                   |
+| QT Wayland Support         | qt5-wayland qt6-wayland    |
+| Status Bar                 | waybar-hyprland            |
+| Wallpaper                  | hyprpaper                  |
+| Per window keyboard layout | hyprland-per-window-layout |
 
 ```bash
-yay -S hyprland-git hyprpaper-git qt5-wayland qt6-wayland waybar-hyprland-git xdg-desktop-portal-hyprland-git
+yay -S hyprland hyprpaper qt5-wayland qt6-wayland waybar xdg-desktop-portal-hyprland hyprland-per-window-layout
 ```
 
 If you are not using a NVIDIA GPU, please delete the lines 9 to 13 in `hypr/.config/hypr/hyprland.conf`
