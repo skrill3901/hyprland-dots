@@ -103,7 +103,7 @@ Now execute Hyprland in tty with `Hyprland`, exit Hyprland by pressing `Super + 
 
 | Type                 | Package(s)                                                                     |
 | -------------------- | ------------------------------------------------------------------------------ |
-| Audio                | pamixer pavucontrol pipewire-pulse                                             |
+| Audio                | pamixer pavucontrol pipewire-pulse sof-firmware alsa-firmware                  |
 | Browser              | firefox                                                                        |
 | Authentication Agent | polkit-kde-agent                                                               |
 | Launcher             | wofi                                                                           |
@@ -117,7 +117,7 @@ Now execute Hyprland in tty with `Hyprland`, exit Hyprland by pressing `Super + 
 If you are interested in alternatives for some of these programs, you can go to [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) list.
 
 ```bash
-yay -S bat btop dunst exa feh ffmpegthumbnailer file-roller firefox grimblast-git gvfs kitty mpv noto-fonts-emoji newsboat pamixer pavucontrol pipewire-pulse polkit-kde-agent stow swaylock-effects thunar thunar-archive-plugin wlogout tldr unzip wl-clipboard wofi yt-dlp zsh
+yay -S bat btop dunst exa feh ffmpegthumbnailer file-roller firefox grimblast-git gvfs kitty mpv noto-fonts-emoji newsboat pamixer pavucontrol pipewire-pulse sof-firmware alsa-firmware  polkit-kde-agent stow swaylock-effects thunar thunar-archive-plugin wlogout tldr unzip wl-clipboard wofi yt-dlp zsh
 ```
 
 ### Zsh shell with Zap
