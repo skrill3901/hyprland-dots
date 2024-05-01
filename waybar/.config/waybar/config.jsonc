@@ -68,7 +68,7 @@
   "battery": {
     "interval": 5,
     "states": {
-      "warning": 30,
+      "warning": 25,
       "critical": 15
     },
     "format": "{icon}  {capacity}%",
@@ -110,7 +110,7 @@
   "hyprland/language": {
     "format": " {}",
     "format-en": "EN",
-    "format-pt": "PT"
+    "format-ru": "RU"
   },
   "clock": {
     "format": "<span color='#bf616a'></span>{:%H:%M}",

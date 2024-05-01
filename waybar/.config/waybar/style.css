@@ -39,6 +39,27 @@ tooltip {
   color: white;
 }
 
+#battery.warning {
+  color: orange;
+}
+
+#battery.critical {
+  animation: blinker 1s infinite;
+  color: red;
+}
+
+@keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 #tray {
   margin-bottom: 2px;
 }
