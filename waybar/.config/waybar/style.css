@@ -7,23 +7,17 @@
   min-height: 0;
 }
 
-#window {
-  border-radius: 10px;
-  margin-left: 60px;
-  margin-right: 60px;
-}
-
 window#waybar {
   color: #cdd6f4;
-  background-color: rgba(26, 27, 38, 0.8);
+  background-color: transparent;
 }
 
 tooltip {
   border-style: solid;
+  border-radius: 5px;
 }
 
 #custom-updates,
-#window,
 #clock,
 #battery,
 #pulseaudio,
@@ -46,6 +40,7 @@ tooltip {
 #battery.critical {
   animation: blinker 1s infinite;
   color: red;
+  font-size: 16px;
 }
 
 @keyframes blinker {
@@ -71,19 +66,19 @@ tooltip {
 
 #workspaces button {
   color: white;
+  border-radius: 10px;
+  padding: 4px;
+  margin-left: 10px;
+  background-color: rgba(73, 167, 238, 0.2);
 }
 
 #workspaces button.active {
-  background: linear-gradient(
-    45deg,
-    rgba(122, 162, 247, 1) 0%,
-    rgba(148, 226, 213, 1) 100%
-  );
+  background-color: rgba(73, 167, 238, 0.4);
   color: white;
 }
 
 #workspaces button.focused {
-  background-color: rgba(26, 27, 38, 0.8);
+  background-color: rgba(73, 167, 238, 1);
   color: black;
 }
 
@@ -93,7 +88,7 @@ tooltip {
 }
 
 #workspaces button:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(73, 167, 238, 0.2);
   color: white;
 }
 
@@ -101,4 +96,6 @@ tooltip {
 .modules-right {
   padding-left: 10px;
   padding-right: 10px;
+  background-color: rgba(73, 167, 238, 0.4);
+  border-radius: 10px;
 }
