@@ -7,7 +7,7 @@
   "gtk-layer-shell": true,
   "height": 20,
   "spacing": 5,
-  "modules-left": ["cpu", "memory", "disk"],
+  "modules-left": ["disk", "memory", "cpu", "temperature"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "tray",
@@ -18,9 +18,9 @@
     "battery"
   ],
   "cpu": {
-    "interval": 10,
-    "format": " CPU {usage}%",
-    "max-length": 10,
+    "interval": 4,
+    "format": " {max_frequency}GHz<span color=\"darkgray\">|{usage}%</span>",
+    "max-length": 16,
     "on-click": ""
   },
   "memory": {
@@ -33,6 +33,19 @@
     "format": " Disk {percentage_used}%",
     "tooltip": true,
     "interval": 30
+  },
+  "temperature": {
+    // "thermal-zone": 1,
+    "interval": 4,
+    //"hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+    "critical-threshold": 80,
+    // "format-critical": " {temperatureC}°C",
+    "format-critical": "  {temperatureC}°C",
+    "format": "{icon}  {temperatureC}°C",
+    "format-icons": ["", "", ""],
+    "max-length": 7,
+    "min-length": 7,
+    "on-click": "xsensors"
   },
   "tray": {
     "icon-size": 14,
@@ -90,5 +103,15 @@
     "format": "<span color='#bf616a'></span>{:%H:%M}",
     "format-alt": "<span color='#bf616a'> </span>{:%a %b %d}",
     "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "custom/weather": {
+    "format": "{}",
+    "format-alt": "{alt}: {}",
+    "format-alt-click": "click-right",
+    "interval": 3600,
+    "exec": "curl -s 'https://wttr.in/?format=1'",
+    //"return-type": "json",
+    //"exec": "~/.config/waybar/modules/weather.sh",
+    "exec-if": "ping wttr.in -c1"
   }
 }

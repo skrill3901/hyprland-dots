@@ -27,17 +27,22 @@ tooltip {
 #memory,
 #language,
 #cpu,
+#temperature,
 #disk,
 #backlight {
   padding: 0px 4px;
   color: white;
 }
 
+#temperature.critical {
+  color: #eb4d4b;
+}
+
 #battery.warning {
   color: orange;
 }
 
-#battery.critical {
+#battery.critical:not(.charging) {
   animation: blinker 1s infinite;
   color: red;
   font-size: 16px;
@@ -69,16 +74,16 @@ tooltip {
   border-radius: 10px;
   padding: 4px;
   margin-left: 10px;
-  background-color: rgba(73, 167, 238, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #workspaces button.active {
-  background-color: rgba(73, 167, 238, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 
 #workspaces button.focused {
-  background-color: rgba(73, 167, 238, 1);
+  background-color: rgba(0, 0, 0, 0.8);
   color: black;
 }
 
@@ -88,14 +93,19 @@ tooltip {
 }
 
 #workspaces button:hover {
-  background-color: rgba(73, 167, 238, 0.2);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
 }
 
 .modules-left,
 .modules-right {
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: rgba(73, 167, 238, 0.4);
-  border-radius: 10px;
+  padding: 4px 10px;
+  background-color: #000;
+}
+
+.modules-left {
+  border-bottom-right-radius: 10px;
+}
+.modules-right {
+  border-bottom-left-radius: 10px;
 }
