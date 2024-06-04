@@ -187,6 +187,12 @@ sudo cp -r Tokyo-Night-GTK-Theme/icons/Tokyonight-Dark /usr/share/icons/
 rm -r Tokyo-Night-GTK-Theme/
 ```
 
+### Others apps
+
+```bash
+yay -S visual-studio-code-bin spotify vesktop-bin librewolf-bin google-chrome ventoy-bin onlyoffice-bin postman-bin microsoft-edge-stable-bin shadowsocks-rust nekoray-bin telegram-desktop brightnessctl-git where-is-my-sddm-theme-git simple-sddm-theme-git sddm-theme-tokyo-night-git sddm-config-editor-git phinger-cursors whitesur-cursor-theme-git hyprcursor-git
+```
+
 ## Credits
 
 - [linuxmobile's hyprland dotfiles](https://github.com/linuxmobile/hyprland-dots)

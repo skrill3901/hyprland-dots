@@ -29,7 +29,8 @@ tooltip {
 #cpu,
 #temperature,
 #disk,
-#backlight {
+#backlight,
+#custom-weather {
   padding: 0px 4px;
   color: white;
 }
